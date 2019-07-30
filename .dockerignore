@@ -1,0 +1,8 @@
+# vs code configuration
+.vscode
+# test output folder
+coverage
+# output folder
+dist
+# dependency folder
+node_modules
