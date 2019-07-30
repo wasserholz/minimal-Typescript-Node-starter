@@ -1,6 +1,6 @@
 {
   "name": "minimal-typescript-node-starter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A minimal template to get started with nodeJs and TypeScript",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "serve": "node dist/index.js",
     "watch-node": "nodemon dist/index.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
-    "test": "jest --forceExit --coverage --verbose",
+    "test": "jest --forceExit --coverage --verbose --detectOpenHandles",
     "watch-test": "npm run test -- --watchAll",
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
@@ -37,9 +37,11 @@
     "concurrently": "^4.1.0",
     "jest": "^24.8.0",
     "nodemon": "^1.19.1",
+    "ts-jest": "^24.0.2",
     "ts-loader": "^6.0.4",
     "ts-node": "^8.3.0",
     "tslint": "^5.18.0",
+    "tslint-config-airbnb": "^5.11.1",
     "typescript": "^3.5.3"
   },
   "dependencies": {},
